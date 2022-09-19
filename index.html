@@ -5,40 +5,69 @@
     <meta charset="utf-8">
     <style>
         /* GLOBAL STYLES */
-      a {
-        color: rgba(178, 112, 224, 0.2);
-      }
-      /* div.bio-box {
-        border: 1px solid green;
-      } */
-      /* SOCIAL STYLES */      
-      .social-link {
-        background: rgba(150, 150, 150, 0.5);
-        color: #00f;
-      }
-      /* BIO STYLES */
-      .bio-box {
-        border: 1px solid #000;
-      }
-      .bio-copy a {
-        color: #0f0;
-      }
-    </style>
+        a {
+          color: #f00;
+        }
+      
+        body {
+            font-size: 62,5%;
+        }
+
+        h1 {
+        font-size: 2em;
+        margin-top: 0;
+        }
+
+        /* HERO STYLES */
+        .full-hero {
+        background-color: #c7dbfc;
+        height: 50vw;
+        width: 50vw;
+        }
+
+        /* SOCIAL STYLES */
+        .social-link {
+          background: rgba(150, 150, 150, 0.5);
+          color: blue;
+        }
+      
+        /* BIO STYLES */
+        .bio-wrapper {
+
+        }
+        .bio-box {
+          border: 1px solid black;
+          font-size: 1em;
+          width: 50%;
+        }
+        .bio-box h3 {
+          font-size: 1.5em;
+        }
+        .bio-copy {
+          font-size: 1em;
+        }
+        .bio-copy a {
+          color: green;
+        }
+      </style>
   </head>
   <body>
-    <h1>I'm an h1</h1>
-    <ul>
-      <li>
-        <a href="https://example.com/" class="social-link">Link</a>
-      </li>
-      <li>
-        <a href="https://example.com/" class="social-link">Link</a>
-      </li>
-      <li>
-        <a href="https://example.com/" class="social-link">Link</a>
-      </li>
-    </ul>
+    <div class="full-hero hero-home">
+        <h1>I'm an h1</h1>
+        <ul>
+          <li>
+            <a href="https://example.com/" class="social-link">Link</a>
+          </li>
+          <li>
+            <a href="https://example.com/" class="social-link">Link</a>
+          </li>
+          <li>
+            <a href="https://example.com/" class="social-link">Link</a>
+          </li>
+        </ul>
+      </div>
     <h2>I'm an h2</h2>
+    <div class="bio-wrapper">
     <div class="bio-box">
       <h3>Michael Hartl</h3>
       <a href="https://twitter.com/mhartl" class="social-link">here</a>
@@ -84,9 +113,12 @@
     </div>
     <div class="bio-box">
       <h3>??</h3>
+      <div class="bio-copy">
       <p>
         The Future
       </p>
+    </div>
+    </div>
     </div>
   </body>
 </html>
